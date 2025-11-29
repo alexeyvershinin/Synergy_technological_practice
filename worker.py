@@ -1,6 +1,28 @@
 from datetime import datetime
 
 class WORKER:
+    """
+        Класс WORKER представляет сотрудника компании.
+
+        Атрибуты:
+            __surname (str): Фамилия и инициалы сотрудника.
+            __position (str): Название должности.
+            __salary (float): Зарплата сотрудника.
+            __year_joined (int): Год поступления на работу.
+
+        Методы:
+            set_surname(surname): Устанавливает фамилию и инициалы.
+            set_position(position): Устанавливает должность.
+            set_salary(salary): Устанавливает зарплату (должна быть >= 0).
+            set_year_joined(year): Устанавливает год поступления на работу.
+            get_surname(): Возвращает фамилию и инициалы.
+            get_position(): Возвращает должность.
+            get_salary(): Возвращает зарплату.
+            get_year_joined(): Возвращает год поступления.
+            get_experience(): Вычисляет стаж работы.
+            display_info(): Выводит полную информацию о сотруднике.
+    """
+
     def __init__(self, surname='', position='', salary=0, year_joined=0):
         self.__surname = surname
         self.__position = position
